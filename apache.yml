@@ -1,0 +1,7 @@
+- hosts: 172.31.18.168
+  become: True
+  tasks:
+    - name: Install apache server
+      yum:
+        name: httpd
+        state: present
