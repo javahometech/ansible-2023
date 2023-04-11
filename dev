@@ -1,0 +1,7 @@
+[apache]
+172.31.18.168
+172.31.20.17
+
+[apache:vars]
+ansible_user=ec2-user
+ansible_ssh_private_key_file=~/ansible.pem
