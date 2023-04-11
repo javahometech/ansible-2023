@@ -18,7 +18,7 @@
       lineinfile:
         path: /etc/httpd/conf/httpd.conf
         regexp: '^Listen'
-        line: 'Listen 8080'
+        line: 'Listen 80'
       notify:
         - restart apache
   handlers:
