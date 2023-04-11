@@ -1,0 +1,13 @@
+- hosts: apache
+  become: True
+  tasks:
+    - name: install git on linux
+      yum:
+        name: git
+        state: present
+      when: ansible_os_family == "Linux"
+    - name: install git on ubuntu
+      apt:
+        name: git
+        state: present
+      when: ansible_os_family == "Debian"
