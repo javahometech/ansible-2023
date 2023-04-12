@@ -1,0 +1,11 @@
+- hosts: apache
+  become: True
+  tasks:
+    - name: create user hari
+      user:
+        name: "{{item}}"
+        group: root
+      with_items:
+        - hari
+        - kashvi
+        - heshvi
